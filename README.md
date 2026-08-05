@@ -1,7 +1,9 @@
 # Portafolio-de-computo-estadistica
 .
 -- Portafolio donde se implementará código con un propósito estadístico --
+
 .
+
 _Se hace usó del lenguaje de programación Python_
 
 .
