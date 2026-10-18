@@ -3,9 +3,9 @@ Código de Python 3
 Estructura del proyecto
 Tarea1
 
-&#x09;|-.venv (carpeta del entorno virtual)
+&#x09;	|-.venv (carpeta del entorno virtual)
 
-&#x09;|-data
+&#x09;			|-data
 
 &#x09;	|- pima-indians-diabetes.csv (no borrar)
 
