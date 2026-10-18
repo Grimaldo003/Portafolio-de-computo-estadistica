@@ -1,0 +1,21 @@
+MODELO LOGISTICO COMPLETO - RESULTADOS
+========================================================
+
+Observaciones: 200
+Predictores  : npreg, glu, bp, skin, bmi, ped, age
+Variable descartada: insulin (50% faltantes)
+
+Variable     Beta  Error_Std       Z    P_valor  Odds_Ratio   IC95_inf  IC95_sup
+   const -11.6022     1.8754 -6.1865 6.1505e-10  9.1457e-06 2.3167e-07    0.0004
+   npreg   0.1742     0.0693  2.5142 1.1932e-02  1.1903e+00 1.0391e+00    1.3633
+     glu   0.0380     0.0072  5.2897 1.2250e-07  1.0387e+00 1.0242e+00    1.0534
+      bp   0.0047     0.0191  0.2484 8.0385e-01  1.0048e+00 9.6783e-01    1.0431
+    skin  -0.0208     0.0254 -0.8199 4.1230e-01  9.7940e-01 9.3186e-01    1.0294
+     bmi   0.1532     0.0419  3.6593 2.5292e-04  1.1655e+00 1.0737e+00    1.2652
+     ped   1.2307     0.7040  1.7482 8.0435e-02  3.4237e+00 8.6148e-01   13.6064
+     age   0.0092     0.0193  0.4780 6.3266e-01  1.0093e+00 9.7177e-01    1.0482
+
+Notas:
+- Beta: coeficiente en escala logit
+- Odds_Ratio = exp(Beta)
+- IC95 = exp(Beta +/- 1.96 * Error_Std)

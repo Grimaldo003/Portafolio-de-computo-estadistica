@@ -1,0 +1,9 @@
+COMPARACION DE MODELOS
+==========================================================
+
+  Modelo  N_pred                     Variables   LogLik      AIC      BIC  Pseudo_R2
+Completo       7 npreg,glu,bp,skin,bmi,ped,age -86.1986 188.3972 214.7838     0.3343
+Reducido       3                 npreg,glu,bmi -88.1224 184.2449 197.4381     0.3195
+ Clinico       4             npreg,glu,bmi,ped -86.7086 183.4171 199.9087     0.3304
+
+Modelo con menor AIC: Clinico

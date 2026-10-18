@@ -1,0 +1,43 @@
+METRICAS DE DESEMPENO - MODELOS LOGISTICOS
+Umbral de clasificacion: 0.5
+==========================================================
+
+[Completo]
+  Matriz: TP=74 FP=34 FN=42 TN=182
+  Exactitud      : 0.7711
+  Sensibilidad   : 0.6379
+  Especificidad  : 0.8426
+  Precision      : 0.6852
+  VPN            : 0.8125
+  F1             : 0.6607
+  Ex_Balanceada  : 0.7403
+  AUC            : 0.8256
+
+[Reducido]
+  Matriz: TP=76 FP=37 FN=40 TN=179
+  Exactitud      : 0.7681
+  Sensibilidad   : 0.6552
+  Especificidad  : 0.8287
+  Precision      : 0.6726
+  VPN            : 0.8174
+  F1             : 0.6638
+  Ex_Balanceada  : 0.7419
+  AUC            : 0.8297
+
+[Clinico]
+  Matriz: TP=73 FP=35 FN=43 TN=181
+  Exactitud      : 0.7651
+  Sensibilidad   : 0.6293
+  Especificidad  : 0.8380
+  Precision      : 0.6759
+  VPN            : 0.8080
+  F1             : 0.6518
+  Ex_Balanceada  : 0.7336
+  AUC            : 0.8298
+
+TABLA COMPARATIVA
+----------------------------------------------------------
+  Modelo  Exactitud  Sensibilidad  Especificidad  Precision    VPN     F1  Ex_Balanceada    AUC
+Completo     0.7711        0.6379         0.8426     0.6852 0.8125 0.6607         0.7403 0.8256
+Reducido     0.7681        0.6552         0.8287     0.6726 0.8174 0.6638         0.7419 0.8297
+ Clinico     0.7651        0.6293         0.8380     0.6759 0.8080 0.6518         0.7336 0.8298

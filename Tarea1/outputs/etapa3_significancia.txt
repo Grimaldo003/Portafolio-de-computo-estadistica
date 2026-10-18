@@ -1,0 +1,21 @@
+SIGNIFICANCIA GLOBAL DEL MODELO
+========================================================
+
+H0: b1 = b2 = ... = b7 = 0 (ningun predictor aporta)
+H1: al menos un bj != 0
+
+lnL modelo completo : -86.1986
+lnL modelo nulo     : -129.4893
+Estadistico LR      : 86.5814
+Grados de libertad  : 7
+Valor critico (5%)  : 14.0671
+p-valor (LR)        : 6.219e-16
+Estadistico Wald    : 49.0423
+p-valor (Wald)      : 2.226e-08
+
+Decision: RECHAZAR H0
+El conjunto de predictores mejora significativamente el modelo frente al de solo intercepto.
+
+                  Modelo  Parametros  Log_Verosimilitud        AIC        BIC  Pseudo_R2_McFadden
+       Nulo (intercepto)           1        -129.489328 260.978656 264.276973            0.000000
+Completo (7 predictores)           8         -86.198610 188.397220 214.783759            0.334319

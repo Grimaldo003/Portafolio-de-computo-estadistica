@@ -1,0 +1,29 @@
+INTERPRETACION DE COEFICIENTES - MODELO COMPLETO
+========================================================
+Observaciones: 200 | Pseudo-R2: 0.3343 | AIC: 188.40
+
+GLU -- glucosa plasmatica (mg/dL)
+  beta = 0.0380 | SE = 0.0072 | p = 0.0000 [SIGNIFICATIVO]
+  Odds Ratio = 1.039 | IC 95% = [1.024, 1.053]
+  Por cada unidad adicional de glucosa plasmatica (mg/dL), el odd de presentar diabetes se multiplica por 1.039 (aumento del 3.9%), manteniendo constantes las demas variables del modelo.
+  El IC 95% NO incluye el valor 1: evidencia consistente.
+
+BMI -- indice de masa corporal (kg/m^2)
+  beta = 0.1532 | SE = 0.0419 | p = 0.0003 [SIGNIFICATIVO]
+  Odds Ratio = 1.166 | IC 95% = [1.074, 1.265]
+  Por cada unidad adicional de indice de masa corporal (kg/m^2), el odd de presentar diabetes se multiplica por 1.166 (aumento del 16.6%), manteniendo constantes las demas variables del modelo.
+  El IC 95% NO incluye el valor 1: evidencia consistente.
+
+AGE -- edad (anos)
+  beta = 0.0092 | SE = 0.0193 | p = 0.6327 [no significativo]
+  Odds Ratio = 1.009 | IC 95% = [0.972, 1.048]
+  Por cada unidad adicional de edad (anos), el odd de presentar diabetes se multiplica por 1.009 (aumento del 0.9%), manteniendo constantes las demas variables del modelo.
+  El IC 95% incluye el valor 1: no hay evidencia concluyente.
+
+PED -- funcion pedigree (antecedentes familiares)
+  beta = 1.2307 | SE = 0.7040 | p = 0.0804 [no significativo]
+  Odds Ratio = 3.424 | IC 95% = [0.861, 13.606]
+  Por cada unidad adicional de funcion pedigree (antecedentes familiares), el odd de presentar diabetes se multiplica por 3.424 (aumento del 242.4%), manteniendo constantes las demas variables del modelo.
+  El IC 95% incluye el valor 1: no hay evidencia concluyente.
+
+Todas las interpretaciones asumen que las demas variables permanecen constantes.

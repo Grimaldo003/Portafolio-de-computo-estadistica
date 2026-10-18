@@ -1,0 +1,23 @@
+PREDICCION SOBRE EL CONJUNTO DE PRUEBA
+==========================================================
+
+Umbral de clasificacion : 0.5
+Observaciones en test   : 332
+Prevalencia real        : 34.9%
+Modelo principal        : Clinico
+
+[Completo] variables: npreg, glu, bp, skin, bmi, ped, age
+  Matriz de confusion: TP=74 FP=34 FN=42 TN=182
+  Aciertos: 256/332 (77.1%)
+
+[Reducido] variables: npreg, glu, bmi
+  Matriz de confusion: TP=76 FP=37 FN=40 TN=179
+  Aciertos: 255/332 (76.8%)
+
+[Clinico] variables: npreg, glu, bmi, ped
+  Matriz de confusion: TP=73 FP=35 FN=43 TN=181
+  Aciertos: 254/332 (76.5%)
+
+Nota: las metricas completas (exactitud, sensibilidad,
+especificidad, precision, VPN, F1, exactitud balanceada y
+AUC) se calculan en la etapa siguiente.

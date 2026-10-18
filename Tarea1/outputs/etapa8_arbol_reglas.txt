@@ -1,0 +1,47 @@
+ARBOL DE DECISION - REGLAS Y ESTRUCTURA
+============================================================
+
+Hiperparametros seleccionados por validacion cruzada:
+  class_weight      : None
+  criterion         : entropy
+  max_depth         : 4
+  min_samples_leaf  : 10
+  AUC medio en CV    : 0.8104
+  Profundidad        : 4
+  Hojas              : 10
+
+Importancia de variables:
+  glu     : 0.5952
+  bmi     : 0.2595
+  ped     : 0.1393
+  npreg   : 0.0060
+
+Reglas (formato texto):
+|--- glu <= 133.500
+|   |--- bmi <= 27.150
+|   |   |--- ped <= 0.615
+|   |   |   |--- class: 0
+|   |   |--- ped >  0.615
+|   |   |   |--- class: 0
+|   |--- bmi >  27.150
+|   |   |--- ped <= 0.820
+|   |   |   |--- glu <= 94.500
+|   |   |   |   |--- class: 0
+|   |   |   |--- glu >  94.500
+|   |   |   |   |--- class: 0
+|   |   |--- ped >  0.820
+|   |   |   |--- class: 1
+|--- glu >  133.500
+|   |--- bmi <= 31.450
+|   |   |--- glu <= 156.000
+|   |   |   |--- class: 0
+|   |   |--- glu >  156.000
+|   |   |   |--- class: 1
+|   |--- bmi >  31.450
+|   |   |--- bmi <= 41.050
+|   |   |   |--- npreg <= 4.500
+|   |   |   |   |--- class: 1
+|   |   |   |--- npreg >  4.500
+|   |   |   |   |--- class: 1
+|   |   |--- bmi >  41.050
+|   |   |   |--- class: 1

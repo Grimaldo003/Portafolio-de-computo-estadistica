@@ -1,0 +1,54 @@
+
+================================================================================
+                      PREGUNTAS DE CONCLUSION
+     Regresion Logistica para Clasificacion de Diabetes - Pima Indians
+================================================================================
+
+1. ¿QUE VARIABLES PARECEN MAS IMPORTANTES?
+   Glucosa (glu) e IMC (bmi), consistentes en todas las etapas (logistica,
+   arbol y analisis exploratorio). Tercera variable: npreg (embarazos).
+   ped es borderline estadisticamente (p = 0.08) pero clinicamente relevante.
+
+2. ¿COINCIDEN LA SIGNIFICANCIA ESTADISTICA Y LA IMPORTANCIA PREDICTIVA?
+   Si, con un matiz. glu, bmi y npreg coinciden plenamente. ped es el caso
+   discrepante: no alcanza significancia al 5% (p = 0.08) pero mejora el
+   AIC (183.42 frente a 184.24), por lo que aporta valor predictivo neto.
+   Significancia estadistica e importancia predictiva no son equivalentes.
+
+3. ¿QUE MODELO OBTUVO MEJOR AUC?
+   La regresion logistica clinica (npreg, glu, bmi, ped): AUC = 0.8298.
+   Le siguen el reducido (0.8297), el completo (0.8256) y el arbol (0.7801).
+
+4. ¿CUAL PRODUJO MEJOR SENSIBILIDAD?
+   La regresion logistica. Con umbral optimo alcanza 0.750, frente a 0.603
+   del arbol. Diferencia de +0.147 (14.7 puntos porcentuales).
+
+5. ¿QUE UMBRAL RECOMENDARIA?
+   Depende del contexto:
+     - 0.30 para tamizaje masivo (sensibilidad 0.819)
+     - 0.39 para diagnostico general (equilibrio: 0.750 / 0.750)
+     - 0.50 para confirmacion con sospecha previa (especificidad 0.838)
+     - 0.60 si los recursos son limitados (especificidad 0.875)
+   Recomendacion principal: 0.39.
+
+6. ¿QUE MODELO SERIA MAS FACIL DE EXPLICAR?
+   El arbol de decision, por sus reglas "si-entonces" explicitas y su
+   aplicacion sin calculo. Paradoja: es mas interpretable pero predice peor.
+
+7. ¿POR QUE EL RESULTADO NO DEBE CONSIDERARSE UN DIAGNOSTICO MEDICO?
+   (a) No es un test clinico validado ni aprobado regulatoria mente.
+   (b) Sensibilidad insuficiente: deja pasar ~25% de casos reales.
+   (c) Variables incompletas: falta HbA1c, insulinemia, historia detallada.
+   (d) Sesgo de muestreo: Pima Indians de los anos noventa.
+   Es una herramienta de tamizaje preliminar, no un diagnostico.
+
+8. ¿QUE LIMITACIONES OBSERVA EN LOS DATOS?
+   (1) Muestra pequena (200 observaciones de entrenamiento).
+   (2) Dataset historico y etnicamente especifico.
+   (3) 50% de valores faltantes en insulin (variable excluida).
+   (4) Imputacion por mediana que no preserva correlaciones.
+   (5) Un unico split train-test, sin validacion externa.
+   (6) Ausencia de biomarcadores clave (HbA1c).
+   (7) Sin validacion temporal.
+
+================================================================================

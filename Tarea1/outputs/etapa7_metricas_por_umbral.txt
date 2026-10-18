@@ -1,0 +1,47 @@
+METRICAS POR UMBRAL - MODELO CLINICO
+==========================================================
+
+Resumen por umbral:
+----------------------------------------------------------
+ umbral  Sensibilidad  Especificidad  Precision       F1   Youden  Exactitud
+   0.20      0.896552       0.587963   0.538860 0.673139 0.484515   0.695783
+   0.25      0.853448       0.671296   0.582353 0.692308 0.524745   0.734940
+   0.30      0.818966       0.712963   0.605096 0.695971 0.531928   0.750000
+   0.35      0.775862       0.731481   0.608108 0.681818 0.507344   0.746988
+   0.40      0.724138       0.768519   0.626866 0.672000 0.492656   0.753012
+   0.45      0.689655       0.814815   0.666667 0.677966 0.504470   0.771084
+   0.50      0.629310       0.837963   0.675926 0.651786 0.467273   0.765060
+   0.55      0.594828       0.851852   0.683168 0.635945 0.446679   0.762048
+   0.60      0.534483       0.875000   0.696629 0.604878 0.409483   0.756024
+   0.65      0.500000       0.888889   0.707317 0.585859 0.388889   0.753012
+   0.70      0.448276       0.893519   0.693333 0.544503 0.341794   0.737952
+
+SELECCION DE UMBRAL SEGUN CRITERIOS
+==========================================================
+
+Criterio 1: Maximo Youden
+  Umbral = 0.30
+  Sensibilidad = 0.8190
+  Especificidad = 0.7130
+  Youden = 0.5319
+
+Criterio 2: Sensibilidad >= 0.80
+  Umbral = 0.30
+  Sensibilidad = 0.8190
+  Especificidad = 0.7130
+
+Criterio 3: Maximo F1
+  Umbral = 0.30
+  Sensibilidad = 0.8190
+  Precision = 0.6051
+  F1 = 0.6960
+
+Criterio 4: Umbral actual (0.50)
+  Sensibilidad = 0.6293
+  Especificidad = 0.8380
+  F1 = 0.6518
+
+RECOMENDACION CLINICA
+----------------------------------------------------------
+El umbral 0.50 deja de detectar aproximadamente un 35% de los casos con diabetes (sensibilidad = 0.63).
+Para alcanzar sensibilidad >= 0.80 se requiere bajar a umbral 0.30, sacrificando especificidad a 0.71.

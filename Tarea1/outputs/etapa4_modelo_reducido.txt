@@ -1,0 +1,38 @@
+MODELO REDUCIDO - RESULTADOS
+==========================================================
+
+Modelo completo:
+Variable     Coef     SE       z  p_valor     OR
+   const -11.6022 1.8754 -6.1865   0.0000 0.0000
+   npreg   0.1742 0.0693  2.5142   0.0119 1.1903
+     glu   0.0380 0.0072  5.2897   0.0000 1.0387
+      bp   0.0047 0.0191  0.2484   0.8039 1.0048
+    skin  -0.0208 0.0254 -0.8199   0.4123 0.9794
+     bmi   0.1532 0.0419  3.6593   0.0003 1.1655
+     ped   1.2307 0.7040  1.7482   0.0804 3.4237
+     age   0.0092 0.0193  0.4780   0.6327 1.0093
+AIC: 188.40 | BIC: 214.78 | Pseudo-R2: 0.3343
+
+Modelo reducido (stepwise backward):
+Variables: npreg, glu, bmi
+Variable     Coef     SE       z  p_valor     OR
+   const -10.8960 1.5863 -6.8690   0.0000 0.0000
+   npreg   0.1956 0.0587  3.3329   0.0009 1.2160
+     glu   0.0375 0.0070  5.3865   0.0000 1.0382
+     bmi   0.1487 0.0352  4.2293   0.0000 1.1604
+AIC: 184.24 | BIC: 197.44 | Pseudo-R2: 0.3195
+
+Modelo clinico:
+Variables: npreg, glu, bmi, ped
+AIC: 183.42 | BIC: 199.91 | Pseudo-R2: 0.3304
+
+Prueba LR (completo vs reducido):
+  LR = 3.8477 | gl = 4 | p = 0.4270
+  El modelo reducido NO pierde capacidad de ajuste de forma significativa. Es preferible por parsimonia.
+
+Trazado del stepwise:
+  7 vars | AIC=188.40 | BIC=214.78 | peor=bp (p=0.8039)
+  6 vars | AIC=186.46 | BIC=209.55 | peor=age (p=0.5772)
+  5 vars | AIC=184.77 | BIC=204.56 | peor=skin (p=0.4201)
+  4 vars | AIC=183.42 | BIC=199.91 | peor=ped (p=0.0945)
+  3 vars | AIC=184.24 | BIC=197.44 | peor=npreg (p=0.0009)
