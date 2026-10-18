@@ -25,7 +25,7 @@ Tarea1
 
 ......por usted mismo)
 
-....|-01_exploración.py
+....|-01_exploración.py (primero tarea.py y luego en orden)
 
 ....|-02_modelo_completo.py
 
@@ -47,7 +47,7 @@ Tarea1
 
 ....|-requirements.txt (librerías a usar) 
 
-....|-tarea.py
+....|-tarea.py (ejecutar primero)
 
 ***********************************
 
