@@ -1,6 +1,6 @@
 **Regresión LOGÍSTICA**
-___ Código de Python 3 ____ 
 
+___ Código de Python 3 ____ 
 
 -*Estructura del proyecto*-
 
@@ -51,6 +51,8 @@ Tarea1
 
 ***********************************
 
+.
+.
 NT: tarea.py se deberá ejecutar 1 sola vez
 
 
